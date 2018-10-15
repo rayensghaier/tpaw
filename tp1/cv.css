@@ -1,3 +1,8 @@
+
+
+
+
+
 table
 
 {
@@ -12,6 +17,28 @@ td
 
     border: 1px solid black;
 
-      cellspacing :1px 
+      
      
+}
+
+
+.introduction
+
+{
+
+    color: blue;
+
+}
+
+#introduction
+
+{
+
+    color: blue;
+
+}
+
+.center
+{
+text-align: center;
 }
