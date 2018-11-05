@@ -1,33 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP2</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
+        <meta charset="utf-8" />
+       <link rel="stylesheet" href="style.css" />  
+        <title>Premiers tests du CSS</title>
+        <script src="formulaire.js"></script>
     </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+
+    <body>
+            <fieldset id="section">
+                    <legend>Vos cordonnées</legend>
+            <form method="post" action="traitement.php">
+                    <h1>Saisie d'une fiche personnelle </h1>
+                    <p>
+                                <label for="nom">Nom </label> 
+                                 <input type="text" name="nom" id="nom" placeholder="Ex :sghaier " maxlength="30" minlength="5" size="30" autocomplete="on"    />
+                                 <div  id="erroritem"> </div> 
+                    </p>
+                         
+                    <p>
+                            <label  for="prenom">Prenom</label> 
+                             <input type="text" name="prenom"  id="prenom" placeholder="Ex :rayen" size="30" autocomplete="on" />  
+                             <div id="erroritem1"> </div> 
+                    </p>
+                     <p>
+                                <label for="naissance">Date de naissance</label> 
+                                 <input type="date" name="naissance"  id="naisssance"  placeholder="Ex : 05/06/1991" autocomplete="on"  />  
+                                 <div id="erroritem2"> </div> 
+                     </p>
+
+                      <p>
+                            <label  for="adresse">Adresse</label> 
+                             <input type="text" name="adresse" id="adresse" placeholder="Ex : 39 rue emile zola"  autocomplete="on"   /> 
+                             <div id="erroritem3"> </div> 
+                      </p>
+                      <p>
+                            <label for="mail">Mail</label> 
+                             <input type="email" name="mail" id="mail"  placeholder="Ex : rayens@live.fr" autocomplete="on"    />  
+                             <div id="erroritem4"> </div> 
+                        </p>
+                        
+                </form>
+               
+                <input type="button" value="Envoyer"  onclick="validation()"/>
+            </fieldset>
+           <div id="resultat"></div> 
+
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
